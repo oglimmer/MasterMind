@@ -1,6 +1,6 @@
 # MasterMind
 
-Implements https://en.wikipedia.org/wiki/Mastermind_(board_game) as a console application in c++ and c.
+Implements https://en.wikipedia.org/wiki/Mastermind_(board_game) as a console application in c, c++, javascript, python and java.
 
 ##  c/c++
 
