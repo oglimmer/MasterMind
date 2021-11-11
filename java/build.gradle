@@ -1,0 +1,24 @@
+
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+}
+
+application {
+    mainClass = 'de.oglimmer.mastermind.Main'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+run {
+    standardInput = System.in
+}
