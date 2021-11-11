@@ -8,6 +8,7 @@ int check(char* guess, char* secret, int silent)
 {
     int hit = 0;
     int colorOnlyHit = 0;
+    int usedSecrets = 0;
     for (int i = 0 ; i < 4 ; i++)
     {
         if (guess[i] == secret[i])
@@ -18,9 +19,10 @@ int check(char* guess, char* secret, int silent)
         {
             for (int j = 0 ; j < 4 ; j++)
             {
-                if (i != j && secret[j] == guess[i] && !(secret[j]== guess[j]))
+                if (i != j && secret[j] == guess[i] && !(secret[j]== guess[j]) && !(usedSecrets & j))
                 {
                     colorOnlyHit++;
+                    usedSecrets |= j;
                     break;
                 }
             }
