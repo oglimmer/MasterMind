@@ -19,10 +19,10 @@ int check(char* guess, char* secret, int silent)
         {
             for (int j = 0 ; j < 4 ; j++)
             {
-                if (i != j && secret[j] == guess[i] && !(secret[j]== guess[j]) && !(usedSecrets & j))
+                if (i != j && secret[j] == guess[i] && !(secret[j]== guess[j]) && !(usedSecrets & (1<<j)))
                 {
                     colorOnlyHit++;
-                    usedSecrets |= j;
+                    usedSecrets |= (1<<j);
                     break;
                 }
             }

@@ -18,10 +18,10 @@ bool Board::check(const Guess& guess) const
             bool found = false;
             for (int j = 0 ; j < 4 ; j++)
             {
-                if (i != j && secret->get(j) == guess.get(i) && !(secret->get(j) == guess.get(j)) && !(usedSecrets & j))
+                if (i != j && secret->get(j) == guess.get(i) && !(secret->get(j) == guess.get(j)) && !(usedSecrets & (1<<j)))
                 {
                     colorOnlyHit++;
-                    usedSecrets |= j;
+                    usedSecrets |= (1<<j);
                     // cout << "Guess " << i << " found a matching color elsewhere \r\n";
                     found = true;
                     break;
