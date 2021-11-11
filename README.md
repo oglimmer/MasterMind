@@ -2,7 +2,9 @@
 
 Implements https://en.wikipedia.org/wiki/Mastermind_(board_game) as a console application in c++ and c.
 
-## build (in either c++ or c)
+##  c/c++
+
+### build
 
 ```
 mkdir build && cd build
@@ -10,8 +12,45 @@ cmake ..
 cmake --build .
 ```
 
-## run (in either c++ or c)
+### run
 
 ```
 ./build/MasterMind
 ```
+
+## java
+
+### build
+
+```
+./gradlew build
+```
+
+### run
+
+```
+java -jar build/libs/MasterMind.jar
+```
+
+## js
+
+### build
+
+```
+npm i
+```
+
+### run
+
+```
+./mastermind.js
+```
+
+## python
+
+### run
+
+```
+./mastermind.py
+```
+

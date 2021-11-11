@@ -11,14 +11,16 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
 }
 
-application {
-    mainClass = 'de.oglimmer.mastermind.Main'
-}
-
 tasks.named('test') {
     useJUnitPlatform()
 }
 
 run {
     standardInput = System.in
+}
+
+jar {
+    manifest {
+        attributes ("Main-Class": "de.oglimmer.mastermind.Game")
+    }
 }
