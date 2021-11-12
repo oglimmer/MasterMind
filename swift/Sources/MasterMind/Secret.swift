@@ -15,8 +15,8 @@ class Secret : CustomStringConvertible {
         for _ in 1...4 {
             secret.insert(Color.getRandom(), at: 0)
         }
-        print("Code: ", terminator: "")
-        print(secret)
+        //print("Code: ", terminator: "")
+        //print(secret)
     }
     
     func get(pos: Int) -> Color {
