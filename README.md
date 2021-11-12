@@ -54,3 +54,16 @@ npm i
 ./mastermind.py
 ```
 
+## swift
+
+### build
+
+```
+swift build
+```
+
+### run
+
+```
+swift run
+```
