@@ -23,3 +23,8 @@ cd ..
 cd swift
 swift build
 cd ..
+
+cd rust
+cargo build
+cd ..
+
