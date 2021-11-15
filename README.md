@@ -1,6 +1,6 @@
 # MasterMind
 
-Implements https://en.wikipedia.org/wiki/Mastermind_(board_game) as a console application in c, c++, javascript, python, swift, rust and java.
+Implements https://en.wikipedia.org/wiki/Mastermind_(board_game) as a console application in c, c++, javascript, python, swift, rust, go and java.
 
 ##  c/c++
 
@@ -80,5 +80,19 @@ cargo build
 
 ```
 cargo run
+```
+
+## go
+
+### build
+
+```
+go build
+```
+
+### run
+
+```
+./mastermind
 ```
 
