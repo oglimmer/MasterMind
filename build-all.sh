@@ -28,3 +28,6 @@ cd rust
 cargo build
 cd ..
 
+cd go
+go build
+cd ..
