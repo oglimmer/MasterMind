@@ -2,6 +2,15 @@
 
 set -eu
 
+if [ "${1:-}" = "clean" ]; then
+    rm -rf c/build
+    rm -rf c++/build
+    rm go/mastermind
+    rm -rf java/build
+    rm -rf rust/target
+    rm -rf swift/.build
+else
+
 cd c
 mkdir build
 cd build
@@ -31,3 +40,5 @@ cd ..
 cd go
 go build
 cd ..
+
+fi
