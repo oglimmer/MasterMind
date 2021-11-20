@@ -5,7 +5,7 @@ set -eu
 if [ "${1:-}" = "clean" ]; then
     rm -rf c/build
     rm -rf c++/build
-    rm go/mastermind
+    rm -f go/mastermind
     rm -rf java/build
     rm -rf rust/target
     rm -rf swift/.build
