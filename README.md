@@ -1,6 +1,6 @@
 # MasterMind
 
-Implements https://en.wikipedia.org/wiki/Mastermind_(board_game) as a console application in c, c++, javascript, python, swift, rust, go and java.
+Implements https://en.wikipedia.org/wiki/Mastermind_(board_game) as a console application in c, c++, javascript (functional and object-oriented), python, swift, rust, go and java.
 
 ##  c/c++
 
@@ -32,7 +32,9 @@ cmake --build .
 java -jar build/libs/MasterMind.jar
 ```
 
-## js
+## js or js_oo
+
+Tested with Node V17.1.0
 
 ### build
 
