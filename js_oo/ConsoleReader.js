@@ -2,7 +2,6 @@
 import readlineSync from 'readline-sync';
 import { Guess } from './Guess.js'
 
-
 export class ConsoleReader {
         
     ask() {

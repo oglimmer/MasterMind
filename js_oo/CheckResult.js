@@ -1,5 +1,3 @@
-
-
 export class CheckResult {
 
     hit = 0
