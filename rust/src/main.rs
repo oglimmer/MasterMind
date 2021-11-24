@@ -1,6 +1,7 @@
 use std::io;
 use std::io::Write;
 use rand::{thread_rng, Rng};
+use std::convert::TryInto;
 
 const RED: char = 'r';
 const GREEN: char = 'g';
